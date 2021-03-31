@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="top_nav_container">
+            <div class="top_nav">
+                <h1>Stonks</h1>
+            </div>
+            <div class="top_nav_buttons">
+                <button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button>
+                <button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button>
+            </div>
+        </div>
+
+        <div id="login_modal" class="login_prompt">
+            <form class="login_modal_container" method="post">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <button class="login_button" type="submit">Login</button>
+                <button class="cancel_button" onclick="document.getElementById('login_modal').style.display='none'">Cancel</button>
+            </form>
+        </div>
+
+        <div id="register_modal" class="login_prompt">
+            <form class="register_modal_container">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                <button class="login_button" type="submit">Register</button>
+                <button class="cancel_button" onclick="document.getElementById('register_modal').style.display='none'">Cancel</button>
+            </form>
+        </div>
+
+        <script>
+            var login_modal = document.getElementById('login_modal');
+            var register_modal = document.getElementById('register_modal');
+            var login_button = document.getElementById('login_button');
+            var register_button = document.getElementById('register_button');
+
+            window.onclick = function(event) {
+                if (event.target == login_modal || event.target == register_modal) {
+                    login_modal.style.display = "none";
+                    register_modal.style.display = "none";
+                }
+                if (event.target == login_button) {
+                    register_modal.style.display = "none";
+                    login_modal.style.display = "block";
+                }
+                if (event.target == register_button) {
+                    login_modal.style.display = "none";
+                    register_modal.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
