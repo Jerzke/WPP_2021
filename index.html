@@ -21,15 +21,26 @@
             <div>
             <nav>
                 <ul>
-                    <li><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" onclick="document.getElementById('login_modal').style.display='none'">Home</button></li>
+                    <li><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" 
+                     onclick="document.getElementById('login_modal').style.display='none'">Home</button></li>
                     <li><button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button></li>
                     <li><button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button></li>
+                    <button class ="close-btn" onclick="togglePopup()">About Us</button>
                 </ul>
 
             </nav>
             </div>
-            <!--end of dropdown-->
         </div>
+        <!--end of dropdown-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn">&times;</div>
+                <h1>About us</h1>
+                <p>testtestesttesttest</p>
+            </div>
+        </div>
+        <div></div>
 <!--login-->
         <div id="login_modal" class="login_prompt">
             <form class="login_modal_container" method="post">

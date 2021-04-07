@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="C:\Users\Jerzke\WPP_2021\styles.css"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stonks</title>
-</head>
-<body>
-   
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8">
+        <title>Stonks</title>
+        <script src="https://use.fontawesome.com/75d7fa3b5d.js"></script>
+        
+    </head>
+    <body>
+        <div class="top_nav_container">
+            <div class="top_nav">
+                <h1>Stonks</h1>
+            </div>
+            <div class="top_nav_buttons">
+            </div>
+            <!--dropdown-->
+            <div>
+            <nav>
+                <ul>
+                    <li><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" 
+                     onclick="document.getElementById('login_modal').style.display='none'">Home</button></li>
+                    <button class ="close-btn" onclick="togglePopup()">About Us</button>
+                </ul>
+
+            </nav>
+            </div>
+        </div>
+        <!--end of dropdown-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn">&times;</div>
+                <h1>About us</h1>
+                <p>testtestesttesttest</p>
+            </div>
+        </div>
+        <div></div>
+        <script src="app.js"> </script>
+    </body>
 </html>
