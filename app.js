@@ -22,3 +22,17 @@ function togglePopup(){
     document.getElementById('popup-1').classList.toggle("active");
     
 }
+
+const chk = document.getElementById('chk');
+const css = document.getElementById('link');
+var count = 1;
+
+chk.addEventListener('change', () => { //Change Between two CSS files
+    count++;
+    if (count%2 == 0) {
+    css.innerHTML = '<link id="link" rel="stylesheet" href="styles2.css"/>';
+    }
+    else {
+    css.innerHTML = '<link id="link" rel="stylesheet" href="styles.css"/>';
+    }
+});
