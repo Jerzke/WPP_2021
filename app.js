@@ -36,3 +36,22 @@ chk.addEventListener('change', () => { //Change Between two CSS files
     css.innerHTML = '<link id="link" rel="stylesheet" href="styles.css"/>';
     }
 });
+
+current_page = window.location.pathname.split('/').pop();
+console.log(current_page);
+
+if (current_page == 'index.html') {
+    if (document.readyState == 'loading'){
+        document.addEventListener('DOMContentLoaded', print_index());
+    }   else  {
+        print_index();
+    }
+}
+
+if (current_page == 'news.html') {
+    if (document.readyState == 'loading'){
+        document.addEventListener('DOMContentLoaded', print_news());
+    }   else  {
+        print_news();
+    }
+}
