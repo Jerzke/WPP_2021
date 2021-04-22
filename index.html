@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
-        <link rel="stylesheet" href="styles.css"/>
-        <meta charset="UTF-8">
-=======
         <link id="link" rel="stylesheet" href="styles.css"/>
         <meta charset="UTF-8">
         <title>Stonks</title>
         <script src="https://kit.fontawesome.com/5b0f0c6065.js" crossorigin="anonymous"></script>  
->>>>>>> alpha
     </head>
     <body>
         <div class="top_nav_container">
             <div class="top_nav">
                 <h1>Stonks</h1>
-<<<<<<< HEAD
-            </div>
-            <div class="top_nav_buttons">
-                <button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button>
-                <button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button>
-            </div>
-        </div>
-
-=======
                 
             </div>
             <div class="top_nav_buttons">
@@ -66,7 +52,6 @@
         </div>
         <div></div>
 <!--login-->
->>>>>>> alpha
         <div id="login_modal" class="login_prompt">
             <form class="login_modal_container" method="post">
                 <label for="username">Username</label>
@@ -77,12 +62,8 @@
                 <button class="cancel_button" onclick="document.getElementById('login_modal').style.display='none'">Cancel</button>
             </form>
         </div>
-<<<<<<< HEAD
-
-=======
         <!--end of login-->
 <!--registeration-->
->>>>>>> alpha
         <div id="register_modal" class="login_prompt">
             <form class="register_modal_container">
                 <label for="username">Username</label>
@@ -96,30 +77,6 @@
                 <button class="cancel_button" onclick="document.getElementById('register_modal').style.display='none'">Cancel</button>
             </form>
         </div>
-<<<<<<< HEAD
-
-        <script>
-            var login_modal = document.getElementById('login_modal');
-            var register_modal = document.getElementById('register_modal');
-            var login_button = document.getElementById('login_button');
-            var register_button = document.getElementById('register_button');
-
-            window.onclick = function(event) {
-                if (event.target == login_modal || event.target == register_modal) {
-                    login_modal.style.display = "none";
-                    register_modal.style.display = "none";
-                }
-                if (event.target == login_button) {
-                    register_modal.style.display = "none";
-                    login_modal.style.display = "block";
-                }
-                if (event.target == register_button) {
-                    login_modal.style.display = "none";
-                    register_modal.style.display = "block";
-                }
-            }
-        </script>
-=======
 <!--end of registeration-->
 
 <div class="news_container">
@@ -133,11 +90,7 @@
 </div>
         <script src="news.js"> </script>
         <script src="app.js"> </script>
-<<<<<<< HEAD
->>>>>>> alpha
-=======
         
 
->>>>>>> alpha
     </body>
 </html>
