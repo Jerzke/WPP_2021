@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="link" rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8">
+        <title>Stonks</title>
+        <script src="https://use.fontawesome.com/75d7fa3b5d.js"></script>  
+    </head>
+    <body>
+        <div class="top_nav_container">
+            <div class="top_nav">
+                <h1>Stonks</h1>
+            </div>
+            <div class="top_nav_buttons">
+               <!---- <button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button>
+                <button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button>
+                <button class="fa fa-bars"></button> -->
+            </div>
+            <!--dropdown-->
+            <div class="top_nav_themes">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <div class="ball"></div>
+                </label>
+            </div>
+            <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" 
+                        onclick="document.getElementById('login_modal').style.display='none'">Home</button></a></li>
+                    <li><button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button></li>
+                    <li><button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button></li>
+                    <button class ="close-btn" onclick="togglePopup()">About Us</button>
+                </ul>
+
+            </nav>
+            </div>
+        </div>
+        <!--end of dropdown-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn">&times;</div>
+                <h1>About us</h1>
+                <p>testtestesttesttest</p>
+            </div>
+        </div>
+        <div></div>
+<!--ToS-->
+        <div class="tos">
+            <h1>1. Title </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus nullam eget felis eget. Tristique magna sit amet purus. Ipsum a arcu cursus vitae congue mauris rhoncus. Purus in massa tempor nec feugiat nisl. Posuere sollicitudin aliquam ultrices sagittis orci. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Turpis egestas pretium aenean pharetra. Vel pretium lectus quam id leo in vitae turpis. Metus dictum at tempor commodo ullamcorper a lacus. Ut tellus elementum sagittis vitae et leo duis. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Facilisis magna etiam tempor orci eu lobortis.
+            Turpis egestas integer eget aliquet nibh praesent tristique magna. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Sodales ut eu sem integer. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. In cursus turpis massa tincidunt dui ut ornare lectus sit. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Nulla aliquet enim tortor at auctor urna. Odio facilisis mauris sit amet massa. Quisque id diam vel quam. Cum sociis natoque penatibus et.
+            </p>
+            <h1>2. Title </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. Porttitor massa id neque aliquam vestibulum morbi blandit. Et netus et malesuada fames ac turpis. Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Eros in cursus turpis massa tincidunt dui ut ornare. Risus nullam eget felis eget nunc lobortis mattis aliquam. Tristique senectus et netus et malesuada fames ac turpis egestas. Nibh mauris cursus mattis molestie a iaculis. Sed nisi lacus sed viverra tellus in hac. Neque vitae tempus quam pellentesque. Velit laoreet id donec ultrices tincidunt arcu non sodales neque.
+            </p>
+            <h1>3. Title </h1>
+            <p>Egestas purus viverra accumsan in nisl. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Cursus euismod quis viverra nibh. Odio eu feugiat pretium nibh ipsum consequat. Velit egestas dui id ornare. Porttitor rhoncus dolor purus non enim praesent. Sit amet commodo nulla facilisi nullam vehicula ipsum a. Arcu vitae elementum curabitur vitae nunc. Vel turpis nunc eget lorem dolor sed. Neque egestas congue quisque egestas diam in arcu cursus. A pellentesque sit amet porttitor eget. Donec et odio pellentesque diam. Velit scelerisque in dictum non. Amet tellus cras adipiscing enim eu turpis. Id cursus metus aliquam eleifend mi in nulla.</p>
+            <h1>4. Title </h1>
+            <p>Consequat ac felis donec et. Augue mauris augue neque gravida. Consectetur adipiscing elit duis tristique sollicitudin. Luctus accumsan tortor posuere ac ut consequat semper viverra. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. In eu mi bibendum neque egestas congue quisque egestas. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Et tortor at risus viverra adipiscing at in. Ut tellus elementum sagittis vitae. Nibh venenatis cras sed felis eget velit aliquet sagittis id. At tellus at urna condimentum.</p>
+        </div>
+
+        <script src="app.js"> </script>
+    </body>
+</html>
