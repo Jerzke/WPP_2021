@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="link" rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8">
+        <title>Stonks</title>
+        <script src="https://kit.fontawesome.com/5b0f0c6065.js" crossorigin="anonymous"></script> 
+        
+    </head>
+    <body>
+        <div class="top_nav_container">
+            <div class="top_nav">
+                <h1>Stonks</h1>
+            </div>
+            <div class="top_nav_buttons">
+            </div>
+            <!--dropdown-->
+            <div class="top_nav_themes">
+                <p>Welcome, Username</p>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <div class="ball">
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                </label>
+            </div>
+            <div>
+            <nav>
+                <ul>
+                    <li><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" 
+                     onclick="document.getElementById('login_modal').style.display='none'">Home</button></li>
+                    <button class ="close-btn" onclick="togglePopup()">About Us</button>     
+                </ul>
+            </nav>
+            </div>
+            
+            <div class="dropdown">
+                <a href=""><img src="user.jpg" id="profilePic"></a>
+                <div class="dropdown-content">
+                  <a href="#">Personal info</a>
+                  <a href="#">Your privacy</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+        <!--end of dropdown-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn">&times;</div>
+                <h1>About us</h1>
+                <p>With Stonks Web Services you have the tools you need to track stocks and access market information.<br>
+                    Create your account now and start personalizing you own track environment.<br>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div id="footNote">
+                <p>Santeri</p>
+                <p>Pedro Stradioto</p>
+                <p>Jere</p>
+                <p>Francisco Carneiro</p>
+            </div>
+        </div>
+        <script src="app.js"> </script>
+    </body>
+</html>

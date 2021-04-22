@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+<<<<<<< HEAD
         <link rel="stylesheet" href="styles.css"/>
         <meta charset="UTF-8">
+=======
+        <link id="link" rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8">
+        <title>Stonks</title>
+        <script src="https://kit.fontawesome.com/5b0f0c6065.js" crossorigin="anonymous"></script>  
+>>>>>>> alpha
     </head>
     <body>
         <div class="top_nav_container">
             <div class="top_nav">
                 <h1>Stonks</h1>
+<<<<<<< HEAD
             </div>
             <div class="top_nav_buttons">
                 <button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button>
@@ -15,6 +23,50 @@
             </div>
         </div>
 
+=======
+                
+            </div>
+            <div class="top_nav_buttons">
+               <!---- <button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button>
+                <button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button>
+                <button class="fa fa-bars"></button> -->
+            </div>
+            <!--dropdown-->
+            <div class="top_nav_themes">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <div class="ball">
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                </label>
+            </div>
+            <div>
+            <nav>
+                <ul>
+                    <li><button id="home_button" onclick="document.getElementById('register_modal').style.display='none'" 
+                     onclick="document.getElementById('login_modal').style.display='none'">Home</button></li>
+                    <li><button id="login_button" onclick="document.getElementById('login_modal').style.display='block'">Login</button></li>
+                    <li><button id="register_button" onclick="document.getElementById('register_modal').style.display='block'">Register</button></li>
+                    <button class ="close-btn" onclick="togglePopup()">About Us</button>
+                </ul>
+
+            </nav>
+            </div>
+        </div>
+        <!--end of dropdown-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn">&times;</div>
+                <h1>About us</h1>
+                <p>With Stonks Web Services you have the tools you need to track stocks and access market information.<br>
+                    Create your account now and start personalizing you own track environment.<br>
+                </p>
+            </div>
+        </div>
+        <div></div>
+<!--login-->
+>>>>>>> alpha
         <div id="login_modal" class="login_prompt">
             <form class="login_modal_container" method="post">
                 <label for="username">Username</label>
@@ -25,7 +77,12 @@
                 <button class="cancel_button" onclick="document.getElementById('login_modal').style.display='none'">Cancel</button>
             </form>
         </div>
+<<<<<<< HEAD
 
+=======
+        <!--end of login-->
+<!--registeration-->
+>>>>>>> alpha
         <div id="register_modal" class="login_prompt">
             <form class="register_modal_container">
                 <label for="username">Username</label>
@@ -38,6 +95,7 @@
                 <button class="cancel_button" onclick="document.getElementById('register_modal').style.display='none'">Cancel</button>
             </form>
         </div>
+<<<<<<< HEAD
 
         <script>
             var login_modal = document.getElementById('login_modal');
@@ -60,5 +118,15 @@
                 }
             }
         </script>
+=======
+<!--end of registeration-->
+<div id="footNote">
+    <p>Santeri</p>
+    <p>Pedro Stradioto</p>
+    <p>Jere</p>
+    <p>Francisco Carneiro</p>
+</div>
+        <script src="app.js"> </script>
+>>>>>>> alpha
     </body>
 </html>
