@@ -155,17 +155,18 @@ function print_news() {
     
     for(let i = 0, len = news.length; i < len; i++) {
         result = localStorage.getItem("clicked_article")
-        let article_status = news[i].clicked;
         let article_name = news[i].name;
         let article_image = news[i].image;
         let article_header = news[i].header;
         let article_story = news[i].story;
+        let article_date = news[i].date;
+        let article_source = news[i].source;
         if (result == article_name) {
             let new_div = document.createElement('div');
             new_div.classList.add('news_page_article')
             var news_page_content = document.getElementsByClassName('news_page_container')[0];
-            var content = `<div><img src="${article_image}" alt="${article_name}" style="height: 600px; width:800px;"> </div>
-            <div class="news_page_header"><h2>${article_header}</h2> <p>${article_story}</p></div>`
+            var content = `<h2>${article_header}</h2><p style="font-size: 12px;">${article_date}</p><div class="image_container"><img src="${article_image}" alt="${article_name}" style="height: 600px; width:800px;"> </div>
+            <div class="news_page_header"> <p>${article_story}</p><div class="source"><p>Source: <a href="${article_source}">${article_source}</a></p></div></div>`
             new_div.innerHTML = content;
             news_page_content.append(new_div);
             console.log('very much working');
