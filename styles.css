@@ -386,3 +386,38 @@ top: 60px;
     background: #007bb5;
     color: white;
   }
+
+  .links_content a:hover {background-color: #ddd;}
+
+  .links:hover .links_content {display: block;}
+
+  .links:hover .links_button {background-color: #412626;}
+
+  .links_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .links_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .links {
+    position: relative;
+    display: inline-block;
+  }
+
+  .links_button {
+    background-color: #412626;
+    color: black;
+    
+    font-size: 14px;
+    border: none;
+    text-align: center;
+  }
