@@ -1,3 +1,5 @@
+
+
 var login_modal = document.getElementById('login_modal');
 var register_modal = document.getElementById('register_modal');
 var login_button = document.getElementById('login_button');
@@ -55,3 +57,8 @@ if (current_page == 'news.html') {
         print_news();
     }
 }
+
+function show_links() {
+    document.getElementById('links').classList.toggle('show');
+}
+
